@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./transitions.css">
+    <title>Transitions</title>
+</head>
+
+<body>
+
+    <!-- Le transizioni ci permettono di "ascoltare" il cambiamento di una (o più) particolare proprietà e chiedere al browser 
+ di animare il valore iniziale in quello finale in modo graduale (interpolazione) -->
+    <div class="container">
+
+        <h2>Transitions</h2>
+        <div class="rectangle n1">width</div>
+        <div class="rectangle n2">color change (click me)</div>
+        <div class="rectangle n3">height</div>
+
+
+        <button>hover me</button>
+    </div>
+
+
+    <section>
+
+        <div class="card">
+            <div class="img-wrapper">
+                <img src="https://images.unsplash.com/photo-1720802616209-c174c23f6565?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <h3>Seaside</h3>
+            </div>
+            <div class="card-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, deserunt!</p>
+                <p> Alias, veniam eos iste voluptate itaque. Nesciunt,
+                    aliquid maxime.</p>
+                <span>2024</span>
+                <button>Scopri di più</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>Epicode &copy;</footer>
+
+    <script>
+
+        const rectangleTwo = document.querySelector(".rectangle.n2")
+        rectangleTwo.onclick = function (e) {
+            e.target.classList.toggle("change")
+        }
+    </script>
+</body>
+
+</html>

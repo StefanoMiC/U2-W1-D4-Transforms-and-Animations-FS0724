@@ -1,0 +1,58 @@
+body {
+  /* animation: fade-in 3s 5s backwards; */
+}
+
+.container {
+  height: 500px;
+}
+
+.rectangle {
+  padding: 0.5rem 1rem;
+  background-color: palegreen;
+  border: 1px solid rgb(66, 170, 66);
+}
+
+.rectangle.n1 {
+  width: 200px;
+  position: relative;
+}
+
+.move {
+  animation: rectangle-move 6s 2 alternate 1s both;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rectangle-move {
+  0% {
+    left: 100px;
+    top: 0;
+    background-color: fuchsia;
+  }
+  25% {
+    left: 750px;
+    top: 0;
+    background-color: aquamarine;
+  }
+  50% {
+    left: 750px;
+    top: 250px;
+  }
+  75% {
+    left: 0;
+    top: 250px;
+    background-color: yellow;
+  }
+  100% {
+    left: 0;
+    top: 0;
+    background-color: red;
+  }
+}

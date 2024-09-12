@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  padding-inline: 1rem;
+}
+
+.container {
+  max-width: 992px;
+  margin-inline: auto;
+  border-radius: 10px;
+  margin-top: 5rem;
+  padding: 1rem;
+  border: 2px solid #ebebeb;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border-radius: 6px;
+}
+
+.palegolden {
+  background-color: palegoldenrod;
+}
+
+.coral {
+  background-color: coral;
+}
+
+.crimson {
+  background-color: crimson;
+}
+
+.aqua {
+  background-color: aqua;
+}
+
+.palegreen {
+  background-color: palegreen;
+}
